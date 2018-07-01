@@ -16,9 +16,13 @@
     "react-scripts": "1.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "webpack --progress",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "start": "webpack-dev-server --open",
+    "build": "npm run clean && npm run compile",
+    "clean": "rm -rf ./build/index.bundle.js",
+    "compile": "NODE_ENV=production webpack --config ./webpack.config.js --progress"
+  },
+  "devDependencies": {
+    "webpack": "^4.14.0",
+    "webpack-dev-server": "^3.1.4"
   }
 }

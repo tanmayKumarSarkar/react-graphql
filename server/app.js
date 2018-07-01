@@ -7,7 +7,7 @@ const path = require('path');
 
 const app = express();
 
-const env = (process.env.NODE_ENV == 'PROD')  ?  'prod' : 'dev';
+const env = (process.env.NODE_ENV == 'production')  ?  'prod' : 'dev';
 
 mongoose.Promise = global.Promise;
 mongoose.connect('mongodb://username:password@ds127139.mlab.com:27139/bookstore')
@@ -30,7 +30,7 @@ app.get('*', (req, res)=>{
   if(env=='prod'){
     res.sendFile(path.join(__dirname, '../client/build/index.html'));
   }else{
-    res.send('res');
+    res.send('Directory Not Found');
   }
 });
 
