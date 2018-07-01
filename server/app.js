@@ -20,6 +20,10 @@ app.use('/graphql', graphqlHTTP({
     graphiql: true
 }));
 
+app.get('*', (req, res) => {
+  res.send('Directory', env, );
+});
+
 if(env=='prod'){
   console.log(process.env.NODE_ENV);
   app.use(express.static(path.join(__dirname, '../client/build')));
@@ -27,6 +31,7 @@ if(env=='prod'){
 }
 
 app.get('*', (req, res)=>{
+  
   if(env=='prod'){
     res.sendFile(path.join(__dirname, '../client/build/index.html'));
   }else{
