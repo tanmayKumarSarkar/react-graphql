@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Express</title>
+    <link rel='stylesheet' href='/build.css' />
+    <script src='/build.js'></script>
+  </head>
+  <body>
+    <img class='express-express' src='/images/express-express.svg'>
+    <p class='welcome'>{{message}}</p>
+    <img class='brunch' src='/images/brunch.png'>
+  </body>
+</html>

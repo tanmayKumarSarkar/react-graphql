@@ -1,0 +1,7 @@
+@html.extend('layout', function(model) {
+  @html.block('content', function(model) {
+    <img class='express-express' src='/images/express-express.svg'>
+    <p class='welcome'>Welcome to @model.message</p>
+    <img class='brunch' src='/images/brunch.png'>
+  })
+})
