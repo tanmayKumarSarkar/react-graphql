@@ -6,7 +6,8 @@
   "main": "app.js",
   "scripts": {
     "start": "node server/app.js",
-    "postinstall": "cd client && npm run build"
+    "postinstall": "cd client && npm run build",
+    "dev": "node server/app.js"
   },
   "author": "",
   "license": "ISC",
