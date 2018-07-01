@@ -1,11 +1,12 @@
 {
   "name": "server",
   "version": "1.0.0",
+  "private": true,
   "description": "",
   "main": "app.js",
   "scripts": {
     "start": "node server/app.js",
-    "postinstall": "npm run build --prefix client"
+    "postinstall": "cd client && npm run build"
   },
   "author": "",
   "license": "ISC",
@@ -17,5 +18,9 @@
     "graphql": "^0.13.2",
     "lodash": "^4.17.10",
     "mongoose": "^5.1.7"
+  },
+  "engines": {
+    "npm": "5.5.1",
+    "node": "8.9.1"
   }
 }
