@@ -21,7 +21,7 @@ app.use('/graphql', graphqlHTTP({
 }));
 
 app.get('*', (req, res) => {
-  res.send('Directory', env, );
+  res.send('Directory'+ env);
 });
 
 if(env=='prod'){
