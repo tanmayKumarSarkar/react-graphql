@@ -20,7 +20,7 @@
     "start": "webpack-dev-server --open",
     "build": "npm run clean && npm run compile",
     "clean": "rm -rf ./build/index.bundle.js",
-    "compile": "NODE_ENV=production webpack --config ./webpack.config.js --progress"
+    "compile": "NODE_ENV=production webpack --mode=production --config ./webpack.config.js --progress"
   },
   "devDependencies": {
     "webpack": "^4.14.0",
