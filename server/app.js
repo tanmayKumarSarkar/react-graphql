@@ -20,9 +20,6 @@ app.use('/graphql', graphqlHTTP({
     graphiql: true
 }));
 
-app.get('*', (req, res) => {
-  res.send('Directory'+ env);
-});
 
 if(env=='prod'){
   console.log(process.env.NODE_ENV);

@@ -25,8 +25,7 @@
     "react-apollo": "^2.1.8",
     "react-dom": "^16.4.1",
     "react-scripts": "1.1.4",
-    "webpack": "^4.14.0",
-    "webpack-dev-server": "^3.1.4"
+    "webpack": "^4.14.0"
   },
   "engines": {
     "npm": "5.5.1",
