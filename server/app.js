@@ -25,8 +25,8 @@ app.use(express.static(path.join(__dirname, '../client/public')));
 
 app.get('*', (req, res)=>{  
   if(env=='prod'){
-    res.send('Directory Not Found: in prod mode'+req.url);
-    //res.sendFile(path.join(__dirname, '../client/public/index.html'));
+    //res.send('Directory Not Found: in prod mode'+req.url);
+    res.sendFile(path.join(__dirname, '../client/public/index.html'));
   }else{
     res.send('Directory Not Found: in dev mode');
   }
