@@ -26,7 +26,11 @@
     "react-dom": "^16.4.1",
     "react-scripts": "1.1.4",
     "webpack-cli": "*",
-    "webpack": "^4.14.0"
+    "webpack": "^4.14.0",
+    "babel-cli": "*",
+    "babel-loader": "*",
+    "babel-preset-env": "*",
+    "babel-preset-react": "*"
   },
   "engines": {
     "npm": "5.5.1",
