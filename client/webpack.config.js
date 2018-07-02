@@ -13,11 +13,12 @@ module.exports = {
   },  
   module: {
     rules: [
-      {test: /\.js$/, exclude: /node_modules/, use: 'babel-loader'}  
-    ],
-    loaders: [{
+      {test: /\.js$/, exclude: /node_modules/, use: 'babel-loader'},
+      {
         test: /\.css$/,
-        loader:'style!css!'
-    }]
+        exclude: /node_modules/,
+        loaders: ['style-loader', 'css-loader'],
+       }
+    ]
   }
 }
