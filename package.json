@@ -30,7 +30,8 @@
     "babel-cli": "*",
     "babel-loader": "*",
     "babel-preset-env": "*",
-    "babel-preset-react": "*"
+    "babel-preset-react": "*",
+    "css-parse": "*"
   },
   "engines": {
     "npm": "5.5.1",
