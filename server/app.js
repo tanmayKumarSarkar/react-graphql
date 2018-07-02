@@ -23,14 +23,14 @@ app.use('/graphql', graphqlHTTP({
 
 if(env=='prod'){
   console.log(process.env.NODE_ENV);
-  app.use(express.static(path.join(__dirname, '../client/build')));
-  app.use('*', express.static(path.join(__dirname, '../client/build')));
+  app.use(express.static(path.join(__dirname, '../client/public')));
+  app.use('*', express.static(path.join(__dirname, '../client/public')));
 }
 
 app.get('*', (req, res)=>{
   
   if(env=='prod'){
-    res.sendFile(path.join(__dirname, '../client/build/index.html'));
+    res.sendFile(path.join(__dirname, '../client/public/index.html'));
   }else{
     res.send('Directory Not Found');
   }
