@@ -21,7 +21,7 @@ app.use('/graphql', graphqlHTTP({
 }));
 
 app.use(express.static(path.join(__dirname, '../client/public')));
-app.use('*', express.static(path.join(__dirname, '../client/public')));
+//app.use('*', express.static(path.join(__dirname, '../client/public')));
 
 app.get('*', (req, res)=>{  
   if(env=='prod'){
