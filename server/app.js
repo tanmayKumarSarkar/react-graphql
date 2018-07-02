@@ -20,12 +20,8 @@ app.use('/graphql', graphqlHTTP({
     graphiql: true
 }));
 
-
-// if(env=='prod'){
-//   console.log(process.env.NODE_ENV);
-//   app.use(express.static(path.join(__dirname, '../client/public')));
-//   app.use('*', express.static(path.join(__dirname, '../client/public')));
-// }
+app.use(express.static(path.join(__dirname, '../client/public')));
+app.use('*', express.static(path.join(__dirname, '../client/public')));
 
 app.get('*', (req, res)=>{  
   if(env=='prod'){
